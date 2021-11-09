@@ -1,0 +1,29 @@
+uuid: 0fec1f86-8f18-40ac-8e0f-b1741564471b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_population_size_term
+    - node.type.location
+    - taxonomy.vocabulary.tags
+id: node.location.field_population_size_term
+field_name: field_population_size_term
+entity_type: node
+bundle: location
+label: 'population size term'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

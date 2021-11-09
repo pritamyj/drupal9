@@ -1,0 +1,25 @@
+uuid: 82aa9b1f-c457-4b5c-9e78-f0f9b3d76980
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.location.field_location
+    - field.field.node.location.field_population_size_term
+    - node.type.location
+  module:
+    - user
+id: node.location.teaser
+targetEntityType: node
+bundle: location
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_location: true
+  field_population_size_term: true
+  langcode: true

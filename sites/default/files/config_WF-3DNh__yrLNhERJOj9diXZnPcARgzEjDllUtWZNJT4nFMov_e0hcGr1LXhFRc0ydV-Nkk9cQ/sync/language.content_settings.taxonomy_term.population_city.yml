@@ -1,0 +1,16 @@
+uuid: cef7bf85-4b57-4bf1-a57d-bbce1ece19e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.population_city
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.population_city
+target_entity_type_id: taxonomy_term
+target_bundle: population_city
+default_langcode: site_default
+language_alterable: false

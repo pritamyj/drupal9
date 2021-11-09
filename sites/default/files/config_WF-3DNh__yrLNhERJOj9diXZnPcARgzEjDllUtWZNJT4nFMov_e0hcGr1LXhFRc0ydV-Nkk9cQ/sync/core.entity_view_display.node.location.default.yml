@@ -1,0 +1,39 @@
+uuid: e8042d8c-d462-4d17-911c-8d32499d00a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.location.field_location
+    - field.field.node.location.field_population_size_term
+    - node.type.location
+  module:
+    - geofield
+    - user
+id: node.location.default
+targetEntityType: node
+bundle: location
+mode: default
+content:
+  field_location:
+    weight: 101
+    label: above
+    settings:
+      output_format: wkt
+    third_party_settings: {  }
+    type: geofield_latlon
+    region: content
+  field_population_size_term:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,8 @@
+uuid: 7d124aad-4a7e-417f-b3c7-519886ab3291
+langcode: en
+status: true
+dependencies: {  }
+name: 'Population size'
+vid: population_city
+description: ''
+weight: 0
