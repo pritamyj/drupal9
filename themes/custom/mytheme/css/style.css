@@ -6,18 +6,33 @@ a, a:active, a:hover, a:visited {
   text-decoration: none;
   counter-reset: #000; }
 
-header {
-  background-image: url(../images/2.jpg);
+.header img {
   height: 100vh;
   width: 100%;
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
 
+.main {
+  width: 100%;
+  display: flex; }
+  .main .sidebar {
+    width: 30%;
+    padding: 45px 45px 45px 0; }
+    .main .sidebar .views_slideshow_cycle_slide {
+      width: 100%;
+      z-index: -1;
+      height: 100%; }
+
 .content {
   position: relative;
   width: 70%;
-  margin: auto; }
+  margin: 45px; }
+  .content #block-mytheme-local-tasks ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0; }
   .content footer {
     position: relative;
     height: 50px;
@@ -57,11 +72,14 @@ footer {
     font-size: 20px;
     color: #fff; }
 
+#block-banner1 {
+  margin-top: 0; }
+
 #block-mytheme-main-menu {
   padding: 45px 0px;
   transition: all 0.5s ease-in-out;
   font-family: tahoma;
-  margin-top: 23px; }
+  z-index: 10; }
   #block-mytheme-main-menu ul {
     z-index: 1;
     width: 100%;
