@@ -9,23 +9,21 @@
 {{ attach_library('mytheme/navbar') }}
 
     <header class="header"> 
+        {{ page.header }}  
         <nav class="menu">
             {{ page.menu }}
-        </nav>
-        {{ page.header }} 
-        <div class="heading">
-            <p>Digital Diary </p>
-        </div>
+        </nav> 
 
-    </header>
+    </header> 
 
     <main class="main"> 
-        <div class="content">
+        <div class="content" style="width:100%">
             {{ page.content }}
-        </div>
+        </div> 
         {% if page.sidebar %}
         <div class="sidebar"> 
-        </div>
+            {{ page.sidebar }}
+        </div> 
         {% endif %} 
     </main>
 
